@@ -5,7 +5,7 @@ namespace NZWalks.API.Data
 {
     public class NZWalksDbContext : DbContext
     {
-        public NZWalksDbContext(DbContextOptions dbContextOptions)
+        public NZWalksDbContext(DbContextOptions<NZWalksDbContext> dbContextOptions)
             : base(dbContextOptions) // needed to get a connection string from appsettings
         {
             
